@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from KolaySiparisApp.views import listfood
+from KolaySiparisApp.views import listres
+
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+  
+    url(r'^listfood', listfood),
+    url(r'^listres', listres),
 ]
+
