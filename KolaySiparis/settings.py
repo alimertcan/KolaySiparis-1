@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '45yu1k0^oi79vb65!p9$#c(6z=8$)ze*my57nnk^uisj4p+*1m'
+SECRET_KEY = 'zekwcm(+tfiylb0_=kf+-p*m6i(8ay!h$b9umyr8+5yp4uc2ru'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'KolaySiparis.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [(os.path.join(BASE_DIR,'/home/spqrty/Public/KolaySiparis/templates'))],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,12 +77,11 @@ WSGI_APPLICATION = 'KolaySiparis.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'db.ks.mysql',
+        'NAME':'Kolaydb',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': '147258',
     }
 }
-#FOR GIT
 
 
 # Password validation
